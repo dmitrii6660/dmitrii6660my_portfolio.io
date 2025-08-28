@@ -1,0 +1,85 @@
+.body 
+
+{ 
+
+    margin: 0px; 
+
+} 
+
+ 
+
+.header 
+
+{ 
+
+    height: 40px; 
+
+    width: 100%; 
+
+    background-color: black; 
+
+} 
+
+ 
+
+.nav 
+
+{ 
+
+    display: flex; 
+
+    justify-content: space-evenly; 
+
+} 
+
+ 
+
+.navLinks 
+
+{ 
+
+    color: white; 
+
+} 
+
+ 
+
+.halfBox 
+
+{ 
+
+    width: 50%; 
+
+    height: 100%; 
+
+    border: 2px solid red; 
+
+} 
+
+ 
+
+.blackBox 
+
+{ 
+
+    background-color: rgb(30, 30, 30); 
+
+    height: 500px; 
+
+    width: 100%; 
+
+} 
+
+ 
+
+.greenBox 
+
+{ 
+
+    background-color: rgb(11, 112, 0); 
+
+    height: 500px; 
+
+    width: 100%; 
+
+} 
