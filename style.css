@@ -8,8 +8,9 @@
     height: 40px; 
     width: 100%; 
     background-color: black; 
-    top: 0;
     position: sticky;
+    top: 0;
+    z-index: 1000;
 } 
 
 .nav 
@@ -40,26 +41,10 @@
     aspect-ratio: 1 / 1;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
-}
-
-.blackBox 
-{ 
-    background-color: rgb(255, 255, 255); 
-    height: 500px; 
-    width: 100%; 
     display: flex;
+    align-items: center;
     justify-content: center;
-} 
-
-.greenBox 
-{ 
-    background-color: rgb(0, 254, 127); 
-    height: 500px; 
-    width: 100%; 
-    display: flex;
-    justify-content: end;
-
-} 
+}
 
 .pfp
 {
@@ -71,22 +56,39 @@
 .mainInfo
 {
     width: 60%;
-    height: 100px;
+    height: auto;
     border: 2px solid black;
     margin-left: 10px;
 
 }
 
+.blackBox 
+{ 
+    background-color: rgb(255, 255, 255); 
+    height: 500px; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+} 
+
+.purpleBox 
+{ 
+    background-color: rgb(138, 100, 184); 
+    height: 500px; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+
+} 
+
 .skills
 {
     height: 70%;
     width: 60%;
-    border: 2px solid black;
+    border: 3px solid white;
     border-radius: 15px;
-    background-color: white;
-    margin-top: 100px;
-    margin-right: 100px;
     padding: 20px;
+    margin-left: 100px;
 }
 
 .contact
@@ -105,7 +107,7 @@
 {
     width: 100%;
     height: 700px;
-    background-color: rgb(0, 254, 127);
+    background-color: rgb(138, 100, 184);
 }
 
 .myProjInfo
