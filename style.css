@@ -1,6 +1,7 @@
 .body 
 { 
     margin: 0px; 
+    background-color: rgb(235, 235, 235);
 } 
 
 .header 
@@ -11,7 +12,23 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 } 
+
+.halfHeader
+{
+    width: 50%;
+    height: auto;
+}
+
+.halfHeaderDow
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
 
 .nav 
 { 
@@ -63,16 +80,33 @@
 
 .blackBox 
 { 
-    background-color: rgb(255, 255, 255); 
     height: 600px; 
     width: 100%; 
     display: flex;
     justify-content: center;
 } 
 
+.whiteInfo
+{ 
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 100, 184);
+} 
+
+
+.purpleInfo
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(138, 100, 184);
+    color: white;
+}
+
 .purpleBox 
 { 
     background-color: rgb(138, 100, 184); 
+    color: white;
     height: 600px; 
     width: 100%; 
     display: flex;
@@ -128,4 +162,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Muu teksti decoraatiot*/
+
+.purpleLine
+{
+    text-decoration: underline; 
+    text-decoration-color: rgb(138, 100, 184);
+    white-space: nowrap;
 }

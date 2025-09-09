@@ -9,14 +9,18 @@
 
 <body class="body"> 
     <!--Header-->
-    <header class="header"> 
-    <nav class="nav"> 
-        <a class="navLinks">About me</a> 
-        <a class="navLinks">My projects</a> 
-        <a class="navLinks">Contact</a> 
-        <a class="navLinks">Skills</a> 
-        <a href="assets/dmtPort.pdf", download="dmtPort.pdf">Download my cv</a>
-    </nav> 
+<header class="header"> 
+    <div class="halfHeader">
+        <nav class="nav"> 
+            <a class="navLinks">About me</a> 
+            <a class="navLinks">My projects</a> 
+            <a class="navLinks">Contact</a> 
+            <a class="navLinks">Skills</a> 
+         </nav> 
+    </div>
+        <div class="halfHeaderDow">
+            <a href="assets/linux.pdf", style="margin-right: 50px;", download="dmtPort.pdf">Download my cv</a>
+        </div>
 </header> 
 
 <!--Main content-->
@@ -26,19 +30,24 @@
                 <li style="margin: 0px; display: inline-block;">
                     <div class="pfp"></div>
                     <h2 style="color: white;">Dmitrii Petsnikov</h2>
+                      <h2 style="color: white;">Tredun opiskelija</h2>
                 </li>
             </div>
         </div> 
         <div class="mainInfo">
-            <h2 style="margin-top: 60px;">Minusta</h2>
-            <h3>Olen 16 opiskelia, opiskelen tieto- ja viestintä tekniikka Tredussa, hepolammin kadussa</h3>
+            <h2 style="margin-top: 60px; text-decoration: underline;">Minusta</h2>
+            <h3>Minun nimeni on <strong>Dmitrii</strong>, olen 16 vuotias opiskelija<br><br>
+            Opiskelen nyt Tieto -ja viestintätekniikka Tredussa, hepolammin kadulla Hervanassa<br><br>
+        Aloitin opiskeluun Tredussa 2024 vuonna</h3>
         </div>
     </div> 
 
     <div class="purpleBox"> 
         <div class="skills">
-            <h3>olen harjoitteut omia taittoja usealla tavalla, esimerkiksi tekemällä projekteja tai lukemlla dokumentaatioita joistakin asiasta.</h3><br>
-            <h3>suurimmat toittojani on web kehityksessä liittyviä taitoja ja linuxen käyttämisestä</h3><br>
+            <div class="whiteInfo"><h2>Taidot</h2></div>
+            <h3>olen harjoitteut omia taittoja usealla tavalla, esimerkiksi tekemällä projekteja tai lukemlla dokumentaatioita joistakin asiasta.<br><br>
+            Vahvimmat toittojani on web kehityksessä liittyviä taitoja, myös minulla on hyvin tietoa linuxen käyttämisestä</h3>
+            
             <h3>vieressä on lista taidoistani</h3>
 
         </div>
@@ -47,20 +56,22 @@
                 <h2>Taito lista</h2>
                 <h3>Linux ja bash script</h3>
                 <h3>Wordpress</h3>
-                <h3>Jonkin verran C kieli</h3>
-                <h3>html & css</h3>
-                <h3>Javascript ja php</h3>
+                <h3>Jonkin verran C kieli (opiskelen sitä nyt)</h3>
+                <h3>html, css ja Javascript</h3>
+                <h3>Php ja MySQL, myös osaan sql kieltä</h3>
                 <h3>Github käyttäminen</h3>
             </ul>
     </div> 
 
     <div class="blackBox">
         <div class="contact">
+            <div class="purpleInfo">
             <h2>Ota yhteys</h2>
+            </div>
             <h3>Minun kanssa voi ottaa yhteyden seuraavilla tavoilla:</h3>
             <div style="height: 3px; width: 90%; background-color:black;"></div>
             <ul>
-                <h3><strong>Sähköpostti:</strong> dmitrii.petsnikov@edu.tampere.fi</h3>
+                <span><h3 style="white-space: nowrap;">Sähköpostti:</h3><h3 class="purpleLine">dmitrii.petsnikov@edu.tampere.fi</h3></span>
                 <h3>Puhelinnumero: </h3>
                 <h3>Github: dmitrii6660</h3>
             </ul>
