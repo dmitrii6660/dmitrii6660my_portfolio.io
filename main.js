@@ -1,29 +1,19 @@
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+let lastScroll = 0
+const header = document.querySelector(".header")
 
-function nextSlide() {
-  const total = slides.length;
-  // Nykyinen div liukuu pois oikealle (100%)
-  slides[currentIndex].classList.remove('visible');
-  slides[currentIndex].style.transform = 'translateX(-100%)'; // Liukuu vasemmalta pois (näytön vasen puoli)
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset
+  if (currentScroll > lastScroll && currentScroll > 50)
+  {
+    header.classList.add("hide")
+    console.log("läpi")
+  }
 
-  // Päivitetään indeksiä
-  currentIndex = (currentIndex + 1) % total;
+  else
+  {
+    header.classList.remove("hide")
+    console.log("ei läpi")
+  }
+  lastScroll = currentScroll
 
-  // Seuraava div on aluksi oikealla ulkona (100%)
-  slides[currentIndex].style.transform = 'translateX(100%)';
-
-  // Pieni viive, jotta transition toimii (pakollinen, jotta selain rekisteröi muutoksen)
-  requestAnimationFrame(() => {
-    // Seuraava div liukuu sisään (0%)
-    slides[currentIndex].classList.add('visible');
-    slides[currentIndex].style.transform = 'translateX(0)';
-  });
-
-  // Edellinen div on nyt siirtynyt pois näytöltä vasemmalle, siirretään se pois näkyvistä oikealle, 
-  // jotta se on valmiina seuraavaan kiertoon:
-  setTimeout(() => {
-    let prevIndex = (currentIndex - 1 + total) % total;
-    slides[prevIndex].style.transform = 'translateX(100%)';
-  }, 600); // Hetki transitionin jälkeen
-}
+})
