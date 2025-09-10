@@ -112,6 +112,17 @@
     color: white;
 }
 
+.purpleInfoIcon
+{
+    height: 100%;
+    width: 60px;
+    margin-right: 10px;
+    background-image: url(assets/message.jpg);
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
 .purpleBox 
 { 
     background-color: rgb(138, 100, 184); 
