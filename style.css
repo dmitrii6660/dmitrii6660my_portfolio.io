@@ -67,7 +67,10 @@
 {
     height: 200px;
     width: 200px;
-    border: 2px solid yellow;
+    background-image: url(assets/userIcon.png);
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;     
 }
 
 .mainInfo
@@ -154,6 +157,13 @@
     border-radius: 15px;
 }
 
+.project
+{
+    height: auto;
+    width: auto;
+    
+}
+
 .footer
 {
     width: 100%;
@@ -171,4 +181,17 @@
     text-decoration: underline; 
     text-decoration-color: rgb(138, 100, 184);
     white-space: nowrap;
+}
+
+/* CV katselu nappi */
+.myCVButton
+{
+    background-color: rgb(138, 100, 184);
+    border-radius: 10px;
+    margin-right: 50px;
+    height: 100%;
+    padding: 10px;
+    width: auto;
+    color: white;
+    text-decoration: none;
 }
