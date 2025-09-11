@@ -16,6 +16,12 @@
     transition: transform 0.3s ease;
 } 
 
+@media (max-width: 620px) {
+  .header {
+    height: 60px;
+  }
+}
+
 .header.hide
 { 
     transform: translateY(-100%);
@@ -28,12 +34,25 @@
     height: auto;
 }
 
+@media (max-width: 550px) {
+  .halfHeader {
+    width: 65%;
+  }
+}
+
+
 .halfHeaderDow
 {
     width: 50%;
     height: auto;
     display: flex;
     justify-content: end;
+}
+
+@media (max-width: 550px) {
+  .halfHeaderDow {
+    width: 35%;
+  }
 }
 
 .nav 
@@ -74,10 +93,33 @@
     align-items: center;
 } 
 
+@media (max-width: 1000px) {
+  .halfBox {
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .halfBox {
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 .pfpBox
 {
-    height: 80%;
-    aspect-ratio: 1 / 1;
+    height: 500px;
+    width: 500px;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
     display: flex;
@@ -110,6 +152,70 @@
     justify-content: center;
 } 
 
+@media (max-width: 500px) {
+  .blackBox {
+    height: auto;
+    display: contents;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pfpBox {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pfpBox {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 100px) {
+  .pfp {
+    height: 170px;
+    width: 170px;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .pfp {
+    height: 150px;
+    width: 150px;
+    
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainInfo {
+    width: auto;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .mainInfo {
+    width: auto;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px; 
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+
+
+
 .whiteInfo
 { 
     height: 40px;
@@ -127,37 +233,53 @@
     color: white;
 }
 
-.purpleInfoIcon
-{
-    height: 100%;
-    width: 60px;
-    margin-right: 10px;
-    background-image: url(assets/message.jpg);
-    background-size:     cover;                  
-    background-repeat:   no-repeat;
-    background-position: center center;     
-}
-
 .purpleBox 
 { 
     background-color: rgb(138, 100, 184); 
     color: white;
     height: 600px; 
     width: 100%; 
+    padding-right: 30px;
     display: flex;
     align-items: center;
-
 } 
+
 
 .skills
 {
-    height: 70%;
+    height: auto;
     width: 60%;
     border: 3px solid white;
     border-radius: 15px;
     padding: 20px;
-    margin-left: 100px;
+    padding-bottom: 100px;
+    margin-left: 50px;
 }
+
+@media (max-width: 620px) {
+  .purpleBox {
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills {
+    margin: 0px;
+    margin-left: 10px;
+  }
+}
+
+
+/* Contact*/
+.contactBox 
+{ 
+    height: 600px; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+} 
 
 .contact
 {
@@ -170,6 +292,16 @@
     margin-left: 100px;
     padding: 20px;
 }
+
+@media (max-width: 800px) {
+  .contact {
+    margin: 0px;
+    margin-top: 100px;
+    width: 90%;
+  }
+}
+
+
 
 .myProject
 {
@@ -191,6 +323,15 @@
     border-radius: 15px;
     padding: 20px;
 }
+
+@media (max-width: 500px)
+{
+    .myProjInfo
+    {
+        width: 85%;
+    }
+}
+
 
 .project
 {
@@ -230,3 +371,18 @@
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 620px) {
+  .myCVButton
+  {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .myCVButton
+  {
+    margin-right: 0px;
+  }
+}
+
