@@ -46,13 +46,29 @@
 .navLinks 
 { 
     color: white; 
+    text-decoration: none;
+    transition: all 2s;
 } 
+
+.navLinks:hover
+{ 
+    color: white; 
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 2s;
+} 
+
+.navLinks:visited
+{ 
+    text-decoration: none;
+} 
+
+
 
 .halfBox 
 { 
     width: 50%; 
     height: 100%; 
-    border: 2px solid rgb(45, 159, 0); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +99,6 @@
 {
     width: 60%;
     height: auto;
-    border: 2px solid black;
     margin-left: 20px;
 }
 
