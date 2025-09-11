@@ -24,9 +24,10 @@
 
 @media (max-width: 350px) {
   .header {
+    width: 100%;
     height: 100px;
-    display: flex;
     flex-wrap: wrap;
+    gap: 1px;
   }
 }
 
@@ -47,6 +48,14 @@
     width: 65%;
   }
 }
+@media (max-width: 350px) {
+  .halfHeader {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    line-break: normal;
+  }
+}
 
 .halfHeaderDow
 {
@@ -59,6 +68,12 @@
 @media (max-width: 550px) {
   .halfHeaderDow {
     width: 35%;
+  }
+}
+
+@media (max-width: 350px) {
+  .halfHeaderDow {
+    width: auto;
   }
 }
 
@@ -191,6 +206,12 @@
   }
 }
 
+@media (max-width: 350px) {
+  .pfpBox {
+    margin-top: 70px;
+  }
+}
+
 @media (max-width: 100px) {
   .pfp {
     height: 170px;
@@ -203,7 +224,6 @@
   .pfp {
     height: 150px;
     width: 150px;
-    
   }
 }
 
@@ -219,7 +239,7 @@
 
 @media (max-width: 500px) {
   .mainInfo {
-    width: auto;
+    width: 100%;
     height: 100%;
     margin-left: 0px;
     margin-top: 0px;
@@ -229,6 +249,13 @@
     padding-bottom: 0px;
   }
 }
+
+@media (max-width: 500px) {
+  .mainInfo {
+    padding: 10px;
+  }
+}
+
 
 
 
@@ -289,24 +316,37 @@
     flex-wrap: wrap;
     gap: 5px;
     margin: 0px;
-    margin-left: 10px;
   }
 }
 
 @media (max-width: 800px) {
   .skills {
     margin: 0px;
-    margin-left: 10px;
   }
 }
 
 @media (max-width: 350px) {
   .skills {
+    width: 100%;
     padding-bottom: 40px;
     margin: 0px;
-    margin-left: 10px;
   }
 }
+
+.scillList
+{
+
+}
+
+@media (max-width: 350px) {
+  .scillList {
+    font-size: 15px;
+    padding: 5px;
+    margin: 0px;
+  }
+}
+
+
 
 
 
@@ -356,6 +396,9 @@
     font-size: 15px;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
   }
 }
 
@@ -449,6 +492,9 @@
   {
     height: 20px;
     margin-right: 0px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
