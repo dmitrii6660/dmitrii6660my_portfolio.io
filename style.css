@@ -22,6 +22,14 @@
   }
 }
 
+@media (max-width: 350px) {
+  .header {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .header.hide
 { 
     transform: translateY(-100%);
@@ -39,7 +47,6 @@
     width: 65%;
   }
 }
-
 
 .halfHeaderDow
 {
@@ -61,6 +68,16 @@
     justify-content: space-evenly; 
     align-items: center;
 } 
+
+@media (max-width: 350px) {
+  .nav {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
 
 .navLinks 
 { 
@@ -264,12 +281,34 @@
   }
 }
 
+@media (max-width: 350px) {
+  .purpleBox {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+}
+
 @media (max-width: 800px) {
   .skills {
     margin: 0px;
     margin-left: 10px;
   }
 }
+
+@media (max-width: 350px) {
+  .skills {
+    padding-bottom: 40px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+}
+
+
 
 
 /* Contact*/
@@ -298,6 +337,25 @@
     margin: 0px;
     margin-top: 100px;
     width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact {
+    font-size: 15px;
+  }
+}
+
+.contactUl
+{
+   
+}
+
+@media (max-width: 350px) {
+  .contactUl {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -382,6 +440,14 @@
 @media (max-width: 550px) {
   .myCVButton
   {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .myCVButton
+  {
+    height: 20px;
     margin-right: 0px;
   }
 }
