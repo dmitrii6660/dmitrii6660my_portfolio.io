@@ -51,7 +51,7 @@
 @media (max-width: 350px) {
   .halfHeader {
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     width: 100%;
     line-break: normal;
   }
