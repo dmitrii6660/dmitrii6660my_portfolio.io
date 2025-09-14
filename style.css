@@ -396,9 +396,6 @@
     font-size: 15px;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
   }
 }
 
@@ -492,9 +489,12 @@
   {
     height: 20px;
     margin-right: 0px;
-     display: flex;
+    border: 3px solid black;
+    margin-top: 0px;
+    border-radius: 0px;
+    display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
   }
 }
 
